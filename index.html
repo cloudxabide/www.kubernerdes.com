@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Kubernerdes.com | A LinuxRevolution Creation &#169 2025</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <LINK REL="stylesheet" HREF="./styles.css" TYPE="text/css">
+  <LINK REL="stylesheet" HREF="./word-cloud.css" TYPE="text/css">
+  <LINK REL="stylesheet" HREF="./particles.css" TYPE="text/css">
+</HEAD>
+
+<BODY>
+<div id="particles-js"></div>
+<script src="assets/js/particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'assets/js/particles.json', function() {
+    console.log('particles.json config loaded');
+  });
+
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar.fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
+      // $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+  });
+</script>
+
+<table border=0>
+<tr>
+<TD width=30% align=center>
+<IMG SRC="./images/Peccy-Fedora.png" width=200>
+</TD>
+
+<TD align=center width=40%>
+<span class="boldPara">
+Kubernerdes is my Kubernetes (K8s) playground.  I test deploying Kubernetes using different methods in several enviroments. <BR>
+You can find the best information via my Github repo <BR>
+<A HREF="https://github.com/cloudxabide/kubernerdes.lab">https://github.com/cloudxabide/kubernerdes.lab</A> <BR>
+
+Public Cloud (EKS, OpenShift, Rancher) <BR>
+HomeLab (EKS Anywhere, OpenShift, K3s) <BR>
+
+Intel NUCs (amd64/x86_64)
+NVIDIA Jetson Xavier NX (arm64)
+
+</span>
+</TD>
+
+</TR>
+</TABLE>
+
+<HR width=50% align=center>
+
+<TABLE border=0 width=100%>
+<TR>
+<TD align=center width=20%> &nbsp; </TD>
+<TD align=center width=60%>
+<div id="word-cloud">
+<script src="assets/js/wordcloud.js"></script></div>
+</TD>
+<TD align=center width=20%> &nbsp; </TD>
+</TR>
+</TABLE>
+
+<BR>
+<HR width=50% align=center>
+<BR>
+<span class="descrip">
+
+Particle Effects at the top of page created by <A HREF="https://github.com/VincentGarreau/particles.js/">Vincent Garreau</A> <BR>
+Word Cloud code created by <A HREF="https://codepen.io/stevn/pen/JdwNgw">@stevn - codepen.io </A> <BR>
+
+<script language="Javascript">
+document.write("This page was last modified on: " + document.lastModified +"");
+</SCRIPT>
+<BR>
+(*) A majority of my publicly accessible online content is my own and not related to my work, nor my employer. I callout where my content IS work-related.<br>
+</span> 
+</BODY>
+</HTML>
