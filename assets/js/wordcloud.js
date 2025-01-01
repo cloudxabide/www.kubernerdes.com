@@ -9,7 +9,7 @@ var config = {
     font: "sans-serif"
 }
 
-var words = ["containers", "devops", "linux", "aws", "cloud", "redhat", "hybrid-cloud", "data-science", "machine learning", "MLOps"].map(function(word) {
+var words = ["containers", "devops", "linux", "aws", "cloud", "EKS Anywhere", "hybrid-cloud", "SUSE Rancher", "Kubernetes", "K8s", "K3s"].map(function(word) {
     return {
         word: word,
         freq: Math.floor(Math.random() * 50) + 10
