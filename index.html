@@ -1,136 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Kubernerdes.com | A LinuxRevolution Creation &#169 2025</title>
+  <title>Kubernerdes.com | A LinuxRevolution Creation &#169; 2026</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <LINK REL="stylesheet" HREF="./styles.css" TYPE="text/css">
-  <LINK REL="stylesheet" HREF="./word-cloud.css" TYPE="text/css">
-  <LINK REL="stylesheet" HREF="./particles.css" TYPE="text/css">
-</HEAD>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+  <link rel="stylesheet" href="./word-cloud.css" type="text/css">
+  <link rel="stylesheet" href="./particles.css" type="text/css">
+</head>
 
-<BODY>
+<body>
+
 <div id="particles-js"></div>
 <script src="assets/js/particles.js"></script>
 <script>
   particlesJS.load('particles-js', 'assets/js/particles.json', function() {
     console.log('particles.json config loaded');
   });
-
-  $(function () {
-    $(document).scroll(function () {
-      var $nav = $(".navbar.fixed-top");
-      $nav.toggleClass('scrolled', $(this).scrollTop() > 0);
-      // $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-  });
 </script>
 
-<!-- MAIN TABLE -->
-<TABLE BORDER=0>
-<tr>
-<TD align=center width=15%>
-<IMG SRC="./images/Sus_SUSE_Gecko-sharp.png" width=200>
-</TD>
+<!-- MAIN SECTION -->
+<div class="main-section">
 
-<TD align=center width=5%>
-&nbsp;
-</TD>
+  <div class="avatar">
+    <img src="./images/Gemini_whiteBG_AmongUs-RGS.png" width="200" alt="Avatar">
+  </div>
 
-<TD align=center width=35%>
-<span class="boldPara">
-<B>Kubernerdes</B> is my Kubernetes (K8s) and Cloud-Native playground.  <BR>
-I focus on the deployment of Kubernetes and supporting products/services using different methods in several enviroments. <BR>
+  <div class="intro boldPara">
+    <p><b>Kubernerdes</b> is my Kubernetes (K8s) and Cloud-Native playground.<br>
+    I focus on the deployment of Kubernetes and supporting products/services
+    using different methods in several environments.</p>
 
-<BR>
-You can find more information via my Github repos <BR>
-<A HREF="https://github.com/cloudxabide/kubernerdes.lab">https://github.com/cloudxabide/kubernerdes.lab</A> <BR> 
-<BR>
-Generally this is all just exploration and a work in progress.
-<BR>
-<!-- OVERVIEW TABLE -->
-<TABLE BORDER=0>
-<TH colspan=3>Kubernerdes Overview</TH>
+    <p>You can find more information via my Github repos:<br>
+    <a href="https://github.com/cloudxabide/kubernerdes.lab">https://github.com/cloudxabide/kubernerdes.lab</a></p>
 
-<TR>
-<TD> Public Cloud </TD>
-<TD>&nbsp;</TD>
-<TD>
-<A HREF="https://aws.amazon.com/eks/">Amazon EKS</A> <BR>
-<A HREF="https://www.rancher.com/">SUSE Rancher</A> <BR>
-</TD>
-</TR>
+    <p>Generally this is all just exploration and a work in progress.</p>
 
-<TR><TD colspan=3> <HR> </TD></TR>
+    <table class="overview-table">
+      <thead>
+        <tr><th colspan="2">Kubernerdes Overview</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="category">Public Cloud</td>
+          <td>
+            <a href="https://aws.amazon.com/eks/">Amazon EKS</a><br>
+            <a href="https://www.rancher.com/">SUSE Rancher</a>
+          </td>
+        </tr>
+        <tr class="divider"><td colspan="2"><hr></td></tr>
+        <tr>
+          <td class="category">HomeLab</td>
+          <td>
+            <a href="https://anywhere.eks.amazonaws.com/">Amazon EKS Anywhere</a><br>
+            <a href="https://aws.amazon.com/eks/hybrid-nodes/">Amazon EKS Hybrid Nodes</a><br>
+            <a href="https://www.suse.com/products/k3s/">SUSE K3s</a><br>
+            <a href="https://harvesterhci.io/">SUSE Harvester - Hyperconverged Infrastructure</a>
+          </td>
+        </tr>
+        <tr class="divider"><td colspan="2"><hr></td></tr>
+        <tr>
+          <td class="category">Hardware</td>
+          <td>
+            <a href="https://en.wikipedia.org/wiki/Next_Unit_of_Computing">Intel NUCs (amd64/x86_64) RIP</a><br>
+            <a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-series/">NVIDIA Jetson Xavier NX (arm64)</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<TR>
-<TD>HomeLab </TD>
-<TD>&nbsp;</TD>
-<TD>
-<A HREF="https://anywhere.eks.amazonaws.com/">Amazon EKS Anywhere</A> <BR>
-<A HREF="https://aws.amazon.com/eks/hybrid-nodes/">Amazon EKS Hybrid Nodes</A> <BR>
-<A HREF="https://www.suse.com/products/k3s/">SUSE K3s</A> <BR>
-<A HREF="https://harvesterhci.io/">SUSE Harvester - Hyperconverged Infrastructure</A> <BR>
-</TD>
-</TR>
+</div>
+<!-- /MAIN SECTION -->
 
-<TR><TD colspan=3> <HR> </TD></TR>
-
-<TR>
-<TD>Hardware</TD>
-<TD>&nbsp;</TD>
-<TD>
-<A HREF="https://en.wikipedia.org/wiki/Next_Unit_of_Computing">Intel NUCs (amd64/x86_64) RIP</A> <BR>
-<A HREF="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-series/">NVIDIA Jetson Xavier NX (arm64) </A><BR>
-</TD>
-</TR>
-</TABLE>
-<!-- OVERVIEW TABLE -->
-</TD>
-
-</TD>
-
-<TD align=center width=10%>
-&nbsp;
-</TD>
-
-</TR>
-</TABLE>
-<!-- MAIN PAGE TABLE -->
-<BR>
 <!-- BOTTOM SECTION -->
+<div class="bottom-section">
+  <img src="images/kubernerdes-mascot-ship.png" width="256" height="256" alt="Kubernerdes mascot ship">
+  <div id="word-cloud">
+    <script src="assets/js/wordcloud.js"></script>
+  </div>
+  <img src="images/kubernerdes-mascot.png" width="256" height="256" alt="Kubernerdes mascot">
+</div>
+<!-- /BOTTOM SECTION -->
 
-<TABLE BORDER=0 width=100%>
-<TR>
-<TD align=center width="10%"> &nbsp; </TD>
-<TD align=center width="20%">
-<IMG SRC="images/kubernerdes-mascot-ship.png" width=256 height=256>
-</TD>
-<TD align=center width="40%"> 
-<div id="word-cloud">
-<script src="assets/js/wordcloud.js"></script></div>
-</TD>
-<TD align=center width="20%">
-<IMG SRC="images/kubernerdes-mascot.png" width=256 height=256>
-</TD>
-<TD align=center width="10%"> &nbsp; </TD>
-</TR>
-</TABLE>
+<hr class="footer-hr">
 
-<BR>
-<HR width=50% align=center>
-<BR>
-<span class="descrip">
-Particle Effects at the top of page created by <A HREF="https://github.com/VincentGarreau/particles.js/">Vincent Garreau</A> <BR>
-Word Cloud code created by <A HREF="https://codepen.io/stevn/pen/JdwNgw">@stevn - codepen.io </A> <BR>
-Favicon (Penguin) aquired from <A HREF="https://favicon.io/emoji-favicons/penguin/">favicon.io</A> <BR>
-This site is hosted using <A HREF="https://aws.amazon.com/amplify">AWS Amplify - https://aws.amazon.com/amplify</A> <BR>
+<div class="descrip footer-credits">
+  Particle Effects at the top of page created by <a href="https://github.com/VincentGarreau/particles.js/">Vincent Garreau</a><br>
+  Word Cloud code created by <a href="https://codepen.io/stevn/pen/JdwNgw">@stevn - codepen.io</a><br>
+  Favicon (Penguin) acquired from <a href="https://favicon.io/emoji-favicons/penguin/">favicon.io</a><br>
+  This site is hosted using <a href="https://aws.amazon.com/amplify">AWS Amplify - https://aws.amazon.com/amplify</a><br>
+  <script>
+    document.write("This page was last modified on: " + document.lastModified);
+  </script>
+  <br>
+  (*) A majority of my publicly accessible online content is my own and not related to my work,
+  nor my employer. I callout where my content IS work-related.
+</div>
 
-<script language="Javascript">
-document.write("This page was last modified on: " + document.lastModified +"");
-</SCRIPT>
-<BR>
-(*) A majority of my publicly accessible online content is my own and not related to my work, nor my employer. I callout where my content IS work-related.<br>
-</span> 
-</BODY>
-</HTML>
+</body>
+</html>

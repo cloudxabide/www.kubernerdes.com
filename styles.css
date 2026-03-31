@@ -2,19 +2,20 @@
 <!--
 BODY {
         margin: 0;
-        scrollbar-face-color:#aaaacc;
+        background-color: #F0F4F7;
+        scrollbar-face-color:#5d87a1;
         scrollbar-shadow-color:#000000;
-        scrollbar-highlight-color:#003399;
-        scrollbar-darkshadow-color:#003399;
-        scrollbar-track-color:#4F86F5;
-        scrollbar-arrow-color:#4F86F5; }
-A:link      {color:     #0000F7;
+        scrollbar-highlight-color:#5d87a1;
+        scrollbar-darkshadow-color:#2d5068;
+        scrollbar-track-color:#C0D4DF;
+        scrollbar-arrow-color:#FF6600; }
+A:link      {color:     #5d87a1;
                 TEXT-DECORATION:        none}
-A:visited   {color:             #3F3EC8;
+A:visited   {color:             #7aa0b8;
                 TEXT-DECORATION:        none}
-A:hover {color:         orange;
+A:hover {color:         #FF6600;
                 TEXT-DECORATION:        none}
-A:active    {color:  #red}
+A:active    {color:  #FF6600}
 
     .boldPara {
           font-family:      Verdana, Geneva, Arial;
@@ -22,7 +23,7 @@ A:active    {color:  #red}
           font-weight:      600;
           font-style:       Normal;
           text-decoration:  none;
-          color:            #333355;
+          color:            #2d5068;
           text-indent:      0px;
           line-height:      12pt;
     }
@@ -33,7 +34,7 @@ A:active    {color:  #red}
           font-weight:      500;
           font-style:       Normal;
           text-decoration:  none;
-          color:            #333355;
+          color:            #2d5068;
           text-indent:      0px;
           margin-left:      0px;
     }
@@ -44,21 +45,21 @@ A:active    {color:  #red}
           font-weight:      600;
           font-style:       Normal;
           text-decoration:  none;
-          color:            #333355;
+          color:            #2d5068;
           text-indent:      0px;
           margin-left:      0px;
     }
 
 h1 {
         BACKGROUND:             white;
-        COLOR:          #333355;
+        COLOR:          #5d87a1;
         FONT-WEIGHT: bold;
         TEXT-ALIGN: center
    }
 
 th {
-       BACKGROUND:             #cdcdcd;
-       color:            #333355;
+       BACKGROUND:             #5d87a1;
+       color:            #ffffff;
        FONT-WEIGHT:    bold;
        TEXT-ALIGN:             center;
    }
@@ -118,3 +119,82 @@ th {
     height: 100%;
   }
 
+
+/* ── Layout ─────────────────────────────────────────── */
+.main-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.avatar {
+  flex-shrink: 0;
+}
+
+.intro p {
+  margin: 0 0 0.75rem;
+}
+
+.overview-table {
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  width: 100%;
+}
+
+.overview-table td {
+  padding: 4px 10px;
+  vertical-align: top;
+}
+
+.overview-table td.category {
+  white-space: nowrap;
+  font-weight: 600;
+  color: #5d87a1;
+}
+
+.overview-table tr.divider td {
+  padding: 0;
+}
+
+.overview-table hr {
+  margin: 2px 0;
+  border: none;
+  border-top: 1px solid #C0D4DF;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+}
+
+.footer-hr {
+  display: block;
+  width: 50%;
+  margin: 1rem auto;
+  border: none;
+  border-top: 1px solid #C0D4DF;
+}
+
+.footer-credits {
+  text-align: center;
+  padding: 0.5rem 1rem 2rem;
+}
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 640px) {
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+}
