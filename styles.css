@@ -198,3 +198,59 @@ th {
     flex-direction: column;
   }
 }
+
+/* ── Enhancements ───────────────────────────────────── */
+.badge {
+  vertical-align: middle;
+  opacity: 0.85;
+}
+
+.section-label {
+  margin: 0.75rem 0 0.25rem;
+  font-size: 9pt;
+  font-weight: 600;
+  color: #5d87a1;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.explore-list {
+  margin: 0 0 0.5rem 1.25rem;
+  padding: 0;
+  font-size: 9pt;
+  color: #2d5068;
+  line-height: 1.6;
+}
+
+.findme-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  padding: 0.6rem 2rem;
+  background-color: #dce8f0;
+  border-top: 1px solid #C0D4DF;
+  border-bottom: 1px solid #C0D4DF;
+  font-family: Verdana, Geneva, Arial;
+  font-size: 9pt;
+}
+
+.findme-label {
+  font-weight: 600;
+  color: #2d5068;
+}
+
+.findme-link {
+  color: #2d5068;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.findme-link:hover {
+  color: #FF6600;
+}
+
+.findme-sep {
+  color: #7aa0b8;
+}
